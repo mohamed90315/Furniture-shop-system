@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" styleClass="cred_vbox" stylesheets="@cred.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.project.furniture_shop.CredController">
+
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+
+   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="70.0">
+      <Label alignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="100.0" fitWidth="100.0">
+               <Image url="@images/login.png" />
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label alignment="CENTER">
+         <graphic>
+            <ImageView fitHeight="100.0" fitWidth="100.0">
+               <Image url="@images/register.png" />
+            </ImageView>
+         </graphic>
+      </Label>
+   </HBox>
+   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40.0">
+      <Button alignment="CENTER" mnemonicParsing="false" onAction="#changeWindow" userData="cred_login.fxml" styleClass="main_button" text="Login" textAlignment="CENTER">
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </Button>
+      <Button alignment="CENTER" mnemonicParsing="false" onAction="#changeWindow" userData="cred_register.fxml" styleClass="main_button" text="Register" textAlignment="CENTER">
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </Button>
+   </HBox>
+</VBox>

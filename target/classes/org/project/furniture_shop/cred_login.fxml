@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane styleClass="cred_pane" stylesheets="@cred.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.project.furniture_shop.CredController">
+   <center>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="40.0" stylesheets="@cred.css">
+         <children>
+             <Label alignment="CENTER">
+                 <graphic>
+                     <ImageView fitHeight="100.0" fitWidth="100.0">
+                         <Image url="@images/login.png" />
+                     </ImageView>
+                 </graphic>
+             </Label>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0" styleClass="login_hbox" stylesheets="@cred.css">
+               <children>
+                   <Label alignment="CENTER">
+                       <graphic>
+                           <ImageView fitHeight="40.0" fitWidth="40.0">
+                               <Image url="@images/username.png" />
+                           </ImageView>
+                       </graphic>
+                   </Label>
+                  <TextField fx:id="login_username" promptText="Username" styleClass="login_field" stylesheets="@cred.css" />
+               </children>
+            </HBox>
+             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0" styleClass="login_hbox" stylesheets="@cred.css">
+                 <Label alignment="CENTER">
+                     <graphic>
+                         <ImageView fitHeight="40.0" fitWidth="40.0">
+                             <Image url="@images/password.png" />
+                         </ImageView>
+                     </graphic>
+                 </Label>
+                 <PasswordField fx:id="login_password" promptText="Password" styleClass="login_field" stylesheets="@cred.css" />
+             </HBox>
+             <Button alignment="CENTER" mnemonicParsing="false" onAction="#checkLogin" styleClass="cred_button" text="Login" textAlignment="CENTER" />
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#changeWindow" styleClass="cred_button" stylesheets="@cred.css" text="Back" userData="cred.fxml" BorderPane.alignment="BOTTOM_RIGHT">
+         <BorderPane.margin>
+            <Insets left="20.0" />
+         </BorderPane.margin></Button>
+   </bottom>
+</BorderPane>

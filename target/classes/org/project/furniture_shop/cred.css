@@ -1,0 +1,52 @@
+.login_hbox {
+   -fx-min-height: 10px; /* Minimum height */
+   -fx-pref-height: 10px; /* Preferred height */
+   -fx-max-height: 300px; /* Maximum height */
+}
+
+.login_field {
+   -fx-pref-width: 250px; /* Preferred width */
+   -fx-pref-height: 40px; /* Preferred height */
+   -fx-font-size: 14px;
+}
+
+.cred_pane{
+   -fx-background-image: url("images/login_background.jpg");
+   -fx-background-repeat: stretch;
+   -fx-background-size: cover;
+   -fx-background-position: center center;
+   -fx-padding: 20px;
+}
+
+.cred_vbox{
+   -fx-background-image: url("images/login_background.jpg");
+   -fx-background-repeat: stretch;
+   -fx-background-size: cover;
+   -fx-background-position: center center;
+}
+
+.main_button {
+    -fx-background-color: black;
+    -fx-background-radius: 30; /* Adjust the value to control the curvature */
+    -fx-border-radius: 30; /* Same value as background-radius for a consistent curve */
+    -fx-border-color: black;
+    -fx-text-fill: white; /* Text color */
+    -fx-font-size: 18px; /* Adjust font size as needed */
+    -fx-font-weight: bold; /* Adjust font weight as needed */
+    -fx-padding: 10px 20px; /* Adjust padding as needed */
+    -fx-min-width: 120;
+    -fx-min-height: 50;
+}
+
+.cred_button {
+    -fx-background-color: black;
+    -fx-background-radius: 30; /* Adjust the value to control the curvature */
+    -fx-border-radius: 30; /* Same value as background-radius for a consistent curve */
+    -fx-border-color: black;
+    -fx-text-fill: white; /* Text color */
+    -fx-font-size: 14px; /* Adjust font size as needed */
+    -fx-font-weight: bold; /* Adjust font weight as needed */
+    -fx-padding: 10px 20px; /* Adjust padding as needed */
+    -fx-min-width: 90;
+    -fx-min-height: 30;
+}

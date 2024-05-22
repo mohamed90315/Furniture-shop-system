@@ -1,0 +1,52 @@
+/* General style for the entire application */
+.root {
+    -fx-font-family: 'Arial', sans-serif;
+    -fx-background-image: url("images/login_background.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+    -fx-padding: 20px;
+    -fx-pref-width: 800px;  /* Set preferred width */
+    -fx-pref-height: 600px; /* Set preferred height */
+}
+
+/* Style for the item container */
+#itemContainer {
+    -fx-background-color: rgba(255, 255, 255, 0.8);
+    -fx-border-color: #d1d5db;
+    -fx-border-width: 1px;
+    -fx-padding: 10px;
+}
+
+/* Style for the selected item section */
+#selectedItemText {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+#selectedItemLabel {
+    -fx-font-size: 14px;
+    -fx-text-fill: #555555;
+}
+
+/* Style for the buttons */
+.button {
+    -fx-background-color: #007acc;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-color: #005a99;
+    -fx-border-width: 1px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #005a99;
+}
+
+.button:pressed {
+    -fx-background-color: #004080;
+}
