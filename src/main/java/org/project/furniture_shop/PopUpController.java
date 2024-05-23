@@ -9,10 +9,12 @@ public class PopUpController {
     @FXML
     private Label messageLabel;
 
+    // Set the message of the popup
     public void setMessage(String message) {
         messageLabel.setText(message);
     }
 
+    // Button function to close the popup
     @FXML
     private void closePopup() {
         Stage stage = (Stage) messageLabel.getScene().getWindow();

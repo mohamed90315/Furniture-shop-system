@@ -1,6 +1,11 @@
 package org.project.furniture_shop;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
@@ -9,6 +14,10 @@ import javafx.scene.layout.VBox;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+import java.util.Objects;
 
 // Controller class for managing suppliers
 public class SuppliersController {
@@ -68,5 +77,22 @@ public class SuppliersController {
     private VBox getSelectedItemBox() {
         // Logic to determine which item VBox is selected
         return null;
+    }
+
+    @FXML
+    void goToHomeScreen(ActionEvent event) {
+        try {
+            // Load the supplier FXML file
+            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("main_menu.fxml")));
+            // Create a new scene with the loaded FXML
+            Scene scene = new Scene(root);
+            // Get the stage from the event source
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            // Set the new scene on the stage
+            stage.setScene(scene);
+            stage.show();  // Show the new scene
+        } catch (IOException e) {
+            e.printStackTrace();  // Print the stack trace if there is an error
+        }
     }
 }
