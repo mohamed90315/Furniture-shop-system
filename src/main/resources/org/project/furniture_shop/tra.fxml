@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="701.0" stylesheets="@main_menu.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.project.furniture_shop.TransactionsController">
+    <styleClass>
+        <String fx:value="main_BorderPane" />
+        <String fx:value="main_vbox" />
+    </styleClass>
+    <children>
+        <TableView layoutY="93.0" prefHeight="263.0" prefWidth="701.0">
+            <columns>
+                <TableColumn prefWidth="75.0" text="id" />
+                <TableColumn prefWidth="138.0" text=" furniture_id " />
+                <TableColumn prefWidth="123.0" text="quantity" />
+                <TableColumn minWidth="3.0" prefWidth="81.0" text=" total_price " />
+                <TableColumn prefWidth="132.0" text="customer_name" />
+            </columns>
+        </TableView>
+        <VBox layoutX="503.0" layoutY="391.0" prefHeight="111.0" prefWidth="153.0">
+            <children>
+                <Button mnemonicParsing="false" styleClass="main_button" stylesheets="@payment.css" text="Back" onAction="#changeWindow" userData="main_menu.fxml"/>
+            </children>
+        </VBox>
+        <Label layoutX="300.0" prefHeight="72.0" prefWidth="132.0" text="Transactions" textAlignment="CENTER" />
+    </children>
+
+</AnchorPane>

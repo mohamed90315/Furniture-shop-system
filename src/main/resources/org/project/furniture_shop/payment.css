@@ -1,0 +1,6 @@
+.main_vbox{
+   -fx-background-image: url("images/login_background.jpg");
+   -fx-background-repeat: stretch;
+   -fx-background-size: cover;
+   -fx-background-position: center center;
+}
